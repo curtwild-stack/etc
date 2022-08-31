@@ -1,0 +1,11 @@
+Cmd=%sysdir%/cmd.exe
+------------------------=----------------------------
+Copy to Directory1=%sysdir%/cmd.exe=/c FOR %i IN (%sel_files%) DO IF EXIST %~si\NUL (XCOPY /E /S /F /Y /I "%~ni" "%curdir1%\%~ni") else (COPY /Y "%~nxi" "%curdir1%")
+Copy to Directory2=%sysdir%/cmd.exe=/c FOR %i IN (%sel_files%) DO IF EXIST %~si\NUL (XCOPY /E /S /F /Y /I "%~ni" "%curdir2%\%~ni") else (COPY /Y "%~nxi" "%curdir2%")
+Copy to Directory3=%sysdir%/cmd.exe=/c FOR %i IN (%sel_files%) DO IF EXIST %~si\NUL (XCOPY /E /S /F /Y /I "%~ni" "%curdir3%\%~ni") else (COPY /Y "%~nxi" "%curdir3%")
+Copy to Directory4=%sysdir%/cmd.exe=/c FOR %i IN (%sel_files%) DO IF EXIST %~si\NUL (XCOPY /E /S /F /Y /I "%~ni" "%curdir4%\%~ni") else (COPY /Y "%~nxi" "%curdir4%")
+-----------------------=----------------------------
+Move to Directory1=%sysdir%/cmd.exe=/c FOR %i IN (%sel_files%) DO IF EXIST %~si\NUL (MOVE /Y "%~ni" "%curdir1%\%~ni") else (MOVE /Y "%~nxi" "%curdir1%")
+Move to Directory2=%sysdir%/cmd.exe=/c FOR %i IN (%sel_files%) DO IF EXIST %~si\NUL (MOVE /Y "%~ni" "%curdir2%\%~ni") else (MOVE /Y "%~nxi" "%curdir2%")
+Move to Directory3=%sysdir%/cmd.exe=/c FOR %i IN (%sel_files%) DO IF EXIST %~si\NUL (MOVE /Y "%~ni" "%curdir3%\%~ni") else (MOVE /Y "%~nxi" "%curdir3%")
+Move to Directory4=%sysdir%/cmd.exe=/c FOR %i IN (%sel_files%) DO IF EXIST %~si\NUL (MOVE /Y "%~ni" "%curdir4%\%~ni") else (MOVE /Y "%~nxi" "%curdir4%")
